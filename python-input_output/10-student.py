@@ -13,7 +13,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """My class."""
-        if isinstance(attrs, str):
-            return attrs.__dict__
+        if isinstance(attrs, list):
+            result = {}
+            for attr in attrs:
+                if hasattr(self, attr):
+                    result[attr] = getattr(self, attr)
+            return result
         else:
             return self.__dict__
