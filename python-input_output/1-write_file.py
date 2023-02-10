@@ -10,5 +10,4 @@ def write_file(filename="", text=""):
         f.read()
         f.seek(0)
         f.write(text)
-        f.truncate()
-    return len(text)
+        return len(text)
