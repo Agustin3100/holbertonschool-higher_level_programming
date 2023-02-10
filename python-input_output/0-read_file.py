@@ -7,5 +7,5 @@ def read_file(filename=""):
     if not filename:
         raise ValueError('Cannot convert empty string')
     with open(filename, 'r') as f:
-        print(f.read())
+        print(f.read(), end="")
     f.closed
