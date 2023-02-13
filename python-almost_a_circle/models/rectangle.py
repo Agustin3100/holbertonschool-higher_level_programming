@@ -20,10 +20,10 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         elif width <= 0:
             raise ValueError("width must be > 0")
-        elif x < 0:
-            raise ValueError("y must be >= 0")
-        elif y < 0:
+        if x < 0:
             raise ValueError("x must be >= 0")
+        if y < 0:
+            raise ValueError("y must be >= 0")
         else:
             self.__y = y
             self.width = width
