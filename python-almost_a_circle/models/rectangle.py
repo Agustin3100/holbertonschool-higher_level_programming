@@ -14,6 +14,8 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         elif type(width) != int:
             raise TypeError("width must be an integer")
+        elif type(x) != int:
+            raise TypeError("x must be an integer")
         elif height <= 0:
             raise ValueError("height must be > 0")
         elif width <= 0:
