@@ -10,10 +10,23 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Init func."""
-        self.__width = width
-        self.__heigth = height
-        self.__x = x
-        self.__y = y
+        if type(height) != int:
+            raise TypeError("height must be an integer")
+        elif type(width) != int:
+            raise TypeError("width must be an integer")
+        elif height <= 0:
+            raise ValueError("height must be > 0")
+        elif width <= 0:
+            raise ValueError("width must be > 0")
+        elif x < 0:
+            raise ValueError("y must be >= 0")
+        elif y < 0:
+            raise ValueError("x must be >= 0")
+        else:
+            self.__y = y
+            self.width = width
+            self.height = height
+            self.__x = x
         super().__init__(id)
 
     @property
