@@ -99,3 +99,12 @@ class Rectangle(Base):
     def __str__(self):
         """Magic method lol."""
         return (f"[Rectangle] ({(self.id)}) {self.x}/{self.y} - {self.width}/{self.height}")
+
+    def update(self, *args):
+        """Update func."""
+        for i, arg in enumerate(args):
+            self.id = arg
+            self.width = arg
+            self.height = arg
+            self.x = arg
+            self.y = arg
