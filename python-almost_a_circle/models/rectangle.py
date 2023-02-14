@@ -108,9 +108,9 @@ class Rectangle(Base):
             self.height = arg
             self.x = arg
             self.y = arg
-        for j, ark in enumerate(kwargs):
-            self.id = ark
-            self.width = ark
-            self.height = ark
-            self.x = ark
-            self.y = ark
+        for j, kwg in kwargs.items():
+            self.id = kwg
+            self.width = kwg
+            self.heigt = kwg
+            self.x = kwg
+            self.y = kwg
