@@ -91,8 +91,9 @@ class Rectangle(Base):
 
     def display(self):
         """Display #."""
+        print("\n" * self.y)
         for i in range(self.height):
-            print("#" * self.width)
+            print("#" * self.width, self.x * " ")
 
     def __str__(self):
         """Magic method lol."""
