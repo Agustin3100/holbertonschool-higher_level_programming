@@ -91,11 +91,9 @@ class Rectangle(Base):
 
     def display(self):
         """Display #."""
-        if self.y != 0:
-            print("\n" * self.y, end="")
+        print("\n" * self.y, end="")
         for i in range(self.height):
-            if self.x != 0:
-                print(self.x * " ", self.width * "#")
+            print(self.x * " ", self.width * "#")
 
     def __str__(self):
         """Magic method lol."""
