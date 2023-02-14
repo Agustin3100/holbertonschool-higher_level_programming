@@ -100,7 +100,7 @@ class Rectangle(Base):
         """Magic method lol."""
         return (f"[Rectangle] ({(self.id)}) {self.x}/{self.y} - {self.width}/{self.height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update func."""
         for i, arg in enumerate(args):
             self.id = arg
@@ -108,3 +108,9 @@ class Rectangle(Base):
             self.height = arg
             self.x = arg
             self.y = arg
+        for j, ark in enumerate(kwargs):
+            self.id = ark
+            self.width = ark
+            self.height = ark
+            self.x = ark
+            self.y = ark
