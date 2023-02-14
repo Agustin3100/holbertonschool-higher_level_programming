@@ -102,12 +102,6 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update func."""
-        for i, arg in enumerate(args):
-            self.id = arg
-            self.width = arg
-            self.height = arg
-            self.x = arg
-            self.y = arg
         for j, kwg in kwargs.items():
             self.id = kwg
             self.width = kwg
