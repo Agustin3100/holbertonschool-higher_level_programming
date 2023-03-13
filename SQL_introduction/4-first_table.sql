@@ -1,2 +1,2 @@
 -- First table
-CREATE TABLE (id int, name VARCHAR(256));
+CREATE TABLE IF NOT EXISTS frist_table (id int, name VARCHAR(256));
