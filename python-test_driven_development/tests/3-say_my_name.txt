@@ -1,0 +1,13 @@
+'''
+Test cases
+'''
+>>> say_my_name("John", "Smith")
+My name is John Smith
+>>> say_my_name("Walter", "White")
+My name is Walter White
+>>> My name is Walter White
+My name is Bob
+>>> say_my_name(2,"White")
+first_name must be a string
+>>> say_my_name("White", 2)
+last_name msut be a string
