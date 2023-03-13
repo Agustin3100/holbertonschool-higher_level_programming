@@ -1,2 +1,2 @@
 -- Count 89
-SELECT COUNT (id) from first_table;
+SELECT COUNT (id) FROM first_table;
