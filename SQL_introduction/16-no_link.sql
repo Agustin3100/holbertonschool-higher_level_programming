@@ -1,4 +1,4 @@
 -- List all records of a table
 SELECT score, name, COUNT(*) AS number
 FROM second_table
-GROUP BY score;
+GROUP BY score, name;
