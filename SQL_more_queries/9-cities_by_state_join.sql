@@ -1,3 +1,5 @@
 -- Display all cities
-SELECT id, name, FROM cities AND name FROM states
+SELECT cities.id, cities.name, states.name
+FROM cities
+INNER JOIN states ON cities.name=states.name
 ORDER BY id;
