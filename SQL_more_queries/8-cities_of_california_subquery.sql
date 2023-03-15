@@ -1,6 +1,6 @@
 -- List all california elements
 SELECT id, name FROM cities 
-WHERE EXISTS  
-	(SELECT name
+WHERE state_id =  
+	(SELECT id
 	FROM states
 	WHERE name = 'California');
