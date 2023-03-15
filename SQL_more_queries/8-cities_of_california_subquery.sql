@@ -1,5 +1,5 @@
 -- List all california elements
 SELECT id, name FROM cities 
-WHERE EXISTS id = (SELECT id
+WHERE EXISTS = (SELECT id
 	FROM states
 	WHERE name = 'California');
