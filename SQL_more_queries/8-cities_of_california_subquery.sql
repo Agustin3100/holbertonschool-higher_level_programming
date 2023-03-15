@@ -3,5 +3,5 @@ SELECT id, name FROM cities
 WHERE = 
 	(SELECT name
 	FROM states
-	WHERE name = 'California');
+	WHERE name = 'California')
 ORDER BY id;
