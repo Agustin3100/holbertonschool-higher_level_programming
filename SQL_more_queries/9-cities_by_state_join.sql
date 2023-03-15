@@ -1,3 +1,3 @@
--- Display all cities
-SELECT DISTINCT cities.id, cities.name, states.name FROM cities, states
+-- Display all ciSELECT DISTINCT cities.id, cities.name, states.name FROM cities, states
+SELECT UNIQUE cities.id, cities.name, states.name FROM cities, states
 ORDER BY cities.id;
