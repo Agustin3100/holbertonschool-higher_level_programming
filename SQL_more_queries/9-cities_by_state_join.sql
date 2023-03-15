@@ -1,3 +1,3 @@
 -- Display all cities
-SELECT cities.id, cities.name, states.name FROM cities, states
+SELECT COUNT(DISTINCT cities.id, cities.name, states.name) FROM cities, states
 ORDER BY cities.id;
