@@ -11,6 +11,7 @@ Base.metadata.create_all(engine)
 
 class State(Base):
     """State class with name and id."""
+
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,
                 primary_key=True, nullable=False, unique=True)
