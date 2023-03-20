@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """Lists all state objects that are available on hbtn_0e_6_usa."""
 
 
