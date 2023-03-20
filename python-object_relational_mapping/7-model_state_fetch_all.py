@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-"""Lists all state objects that are available on hbtn_0e_6_usa."""
+"""
+Created on Fri March 19 12:50:00 2023.
+
+@author: Agustin3100
+@description:
+Lists all state objects on hbtn database.
+"""
 
 
 from model_state import Base, State
