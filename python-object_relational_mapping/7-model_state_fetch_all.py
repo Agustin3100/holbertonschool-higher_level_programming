@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all state objects listed on hbtn_0e_6_usa database."""
+"""Lists all state objects that are available on hbtn_0e_6_usa database usign SQLalchemy."""
 
 from model_state import Base, State
 from sys import argv
