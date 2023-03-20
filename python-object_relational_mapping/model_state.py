@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""First state model."""
+"""First state model"""
 
 
 from sqlalchemy import Column, Integer, String
@@ -10,7 +10,7 @@ Base.metadata.create_all(engine)
 
 
 class State(Base):
-    """State class with name and id."""
+    """State class with name and id"""
 
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,
