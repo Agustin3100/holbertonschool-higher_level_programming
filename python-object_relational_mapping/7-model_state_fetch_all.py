@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all state objects that are available on hbtn_0e_6_usa.."""
+"""Lists all state objects that are available on hbtn_0e_6_usa."""
 
 
 from model_state import Base, State
