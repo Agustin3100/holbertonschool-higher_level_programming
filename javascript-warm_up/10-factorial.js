@@ -1,6 +1,10 @@
 #!/usr/bin/node
 
 function factorial (n) {
+  if (n === undefined) {
+    return 1;
+  }
+
   let X = parseInt(n);
 
   if (X <= 0) {
